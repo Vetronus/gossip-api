@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require(__dirname + "/../models/User");
 const task = require(__dirname + "/../plugins/Task");
 
-
+// TODO cleanup and update this file
 async function getAllUsers(req, res, next){
     const [err, users] = await task(User.find());
     if(err & !nf) return next(err);
