@@ -7,12 +7,13 @@ var task = require('../plugins/Task');
 // User Schema
 var UserSchema = new Schema
 ({
-    name: String,
-    username: String,
-    email: String,
-    pass: String,
+    name: {type: String, required: true},
+    username: {type: String, required: true},
+    email: {type: String, required: true},
+    pass: {type: String, required: true},
     encrypted: {type: Boolean, default: false},
     verified: {type: Boolean, default: false},
+    notification: {type: Boolean, default: true},
     stamp: {type: Date, default: Date.now},
 });
 
