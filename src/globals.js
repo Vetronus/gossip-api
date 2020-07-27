@@ -15,7 +15,7 @@ function installGlobalVariables() {
         platform = "Worker | Heroku";
     } 
     // else {
-        // global.URI = "mongodb://admin:sTronGpswd@db.carbonexam.com:27017/sandstorm?authSource=admin";
+        // global.URI = "mongodb://[username]:[password]@db.[ursite].com:27017/[dbName]?authSource=admin";
         // platform = "Droplet | DigitalOcean";
         // global.DEBUG = false;
     // }
